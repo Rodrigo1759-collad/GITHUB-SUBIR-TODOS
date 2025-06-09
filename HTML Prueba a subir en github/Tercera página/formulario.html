@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaweb2.css">
+    <title>Elemento textarea</title>
+</head>
+<body>
+<h2>Formulario con campo de entrada múltiples líneas (Áreas de texto)</h2>
+<form action="htt`s://www.w4schools.com/action_page.php">
+
+<textarea name="idMensaje"></textarea>
+<br><br>
+<input type="submit" value="Enviar"></form>
+
+<h2>Formulario con campo de entrada múltiples líneas (Áreas de texto)</h2>
+<form action="https://www.w3schools.com/action_page.php">
+<textarea name="idMensaje" rows="10" cols="30"></textarea>
+    <br><br>
+    <input type ="submit" value="Enviar"></textarea>
+    <br><br>
+
+</form>
+<h2>Formulario con campo de entrada múltiples líneas (Área de texto)</h2>
+<form action="https://www.w3schools.com/action_page.php">
+<textarea name="idMensaje"rows="10" cols="50">Escribe aquí tus datos personales</textarea>
+<br><br>
+<label for="idMensaje2">Escribe una historia</label>
+<textarea id="idMensaje2" name="idMensaje2" style="width: 100%; height: 100px;"></textarea>
+<br><br>
+<input type="submit" value="Enviar"></form>
+
+
+<h2>FORMULARIO CON BOTONES</h2>
+<form action="https://www.w3schools.com/action_page.php">
+    <button type="button" onclick="alert('Has tocado el botón')">Púlsame!</button>
+    <button type="button" onclick="mostrar_mensaje('Muy bien has tocado')">Púlsame!</button>
+    <br><br>
+    <input type="submit" value="Enviar">
+</form>
+
+<script>
+function mostrar_mensaje(mensaje)
+{
+    alert(mensaje);
+}
+</script>
+
+
+<h2>Formulario con agrupación de campos</h2>
+<form action="https://www.w3schools.com/action_page.php">
+<fieldset>
+<legend>Información personales:</legend>
+<label for="idNombre">Nombre:</label>
+<input type="text" id="idNombre" name="idNombre" required>
+<label for="idApellido">Apellido:</label>
+<input type="text" id="idApellido" name="idApellido" required>
+</fieldset>
+<br>
+<input type="submit" value="Enviar">
+
+
+
+
+</form>
+
+
+
+
+
+    
+</body>
+</html>
