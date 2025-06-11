@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cursos - CRM Alumnado</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar" role="navigation" aria-label="Menú principal">
+      <div class="sidebar-header">
+        <img src="CEU LOGO.png" alt="Logo CEU" class="sidebar-logo" />
+        <h2>CRM Alumnado</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="dashboard.html">Inicio</a></li>
+          <li><a href="alumnos.html">Alumnos</a></li>
+          <li><a href="cursos.html" class="active">Cursos</a></li>
+          <li><a href="calificaciones.html">Calificaciones</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content" role="main">
+      <header class="content-header">
+        <button class="mobile-menu-btn" aria-label="Mostrar/Ocultar menú">&#9776;</button>
+        <h1>Cursos</h1>
+        <div class="user-menu" aria-label="Menú de usuario">
+          <span>Admin</span>
+          <img src="assets/img/user-avatar.png" alt="Avatar de usuario" class="user-avatar" />
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar curso..." aria-label="Buscar cursos" />
+          <button class="btn btn-add" aria-label="Añadir curso">+ Nuevo Curso</button>
+        </div>
+
+        <table class="data-table" aria-describedby="tabla-cursos">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre del Curso</th>
+              <th>Duración</th>
+              <th>Responsable</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas dinámicas -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 CEU - MiniLab DAM/DAW</p>
+  </footer>
+
+  <!-- Modal curso -->
+  <div id="modal-curso" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title-curso">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+      <h3 id="modal-title-curso">Nuevo Curso</h3>
+      <form>
+        <input type="hidden" name="id" />
+        <div class="form-group">
+          <label for="nombre-curso">Nombre del Curso</label>
+          <input class="form-control" type="text" name="nombre-curso" id="nombre-curso" required />
+        </div>
+        <div class="form-group">
+          <label for="duracion">Duración</label>
+          <input class="form-control" type="text" name="duracion" id="duracion" placeholder="Ej: 2 años" required />
+        </div>
+        <div class="form-group">
+          <label for="responsable">Responsable</label>
+          <input class="form-control" type="text" name="responsable" id="responsable" required />
+        </div>
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
