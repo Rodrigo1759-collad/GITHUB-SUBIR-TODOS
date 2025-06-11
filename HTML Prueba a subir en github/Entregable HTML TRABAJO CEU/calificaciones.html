@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calificaciones - CRM Alumnado</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar" role="navigation" aria-label="Menú principal">
+      <div class="sidebar-header">
+        <img src="CEU LOGO.png" alt="Logo CEU" class="sidebar-logo" />
+        <h2>CRM Alumnado</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="dashboard.html">Inicio</a></li>
+          <li><a href="alumnos.html">Alumnos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="calificaciones.html" class="active">Calificaciones</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content" role="main">
+      <header class="content-header">
+        <button class="mobile-menu-btn" aria-label="Mostrar/Ocultar menú">&#9776;</button>
+        <h1>Calificaciones</h1>
+        <div class="user-menu" aria-label="Menú de usuario">
+          <span>Admin</span>
+          <img src="assets/img/user-avatar.png" alt="Avatar de usuario" class="user-avatar" />
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar calificación por alumno, asignatura o curso..." aria-label="Buscar calificaciones" />
+          <button class="btn btn-add" aria-label="Añadir calificación">+ Añadir</button>
+        </div>
+
+        <table class="data-table" aria-describedby="tabla-calificaciones">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Alumno</th>
+              <th>Curso</th>
+              <th>Asignatura</th>
+              <th>Nota</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas dinámicas aquí -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 CEU - MiniLab DAM/DAW</p>
+  </footer>
+
+  <!-- Modal calificaciones -->
+  <div id="modal-calificacion" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title-calificacion">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+      <h3 id="modal-title-calificacion">Nueva Calificación</h3>
+      <form>
+        <input type="hidden" name="id" />
+        <div class="form-group">
+          <label for="alumno">Alumno/a</label>
+          <input class="form-control" type="text" name="alumno" id="alumno" required />
+        </div>
+        <div class="form-group">
+          <label for="curso">Curso</label>
+          <select class="form-control" name="curso" id="curso" required>
+            <option value="DAW">DAW</option>
+            <option value="DAM">DAM</option>
+            <option value="ASIR">ASIR</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="asignatura">Asignatura</label>
+          <input class="form-control" type="text" name="asignatura" id="asignatura" required />
+        </div>
+        <div class="form-group">
+          <label for="nota">Nota</label>
+          <input class="form-control" type="number" min="0" max="10" step="0.1" name="nota" id="nota" required />
+        </div>
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

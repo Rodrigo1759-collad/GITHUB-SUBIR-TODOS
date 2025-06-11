@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CRM Alumnado - %TITLE%</title>
+<link rel="stylesheet" href="estilos.css" />
+<link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar" role="navigation" aria-label="Menú principal">
+      <div class="sidebar-header">
+        <img src="CEU LOGO.png" alt="Logo CEU" class="sidebar-logo" />
+        <h2>CRM Alumnado</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="dashboard.html" class="%DASHBOARD_ACTIVE%">Inicio</a></li>
+          <li><a href="alumnos.html" class="%ALUMNOS_ACTIVE%">Alumnos</a></li>
+          <li><a href="cursos.html" class="%CURSOS_ACTIVE%">Cursos</a></li>
+          <li><a href="calificaciones.html" class="%CALIFICACIONES_ACTIVE%">Calificaciones</a></li>
+          <li><a href="admin.html" class="%ADMIN_ACTIVE%">Admin</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content" role="main">
+      <header class="content-header">
+        <button class="mobile-menu-btn" aria-label="Mostrar/Ocultar menú">&#9776;</button>
+        <h1>%PAGE_TITLE%</h1>
+        <div class="user-menu" aria-label="Menú de usuario">
+          <span>Admin</span>
+          <img src="assets/img/user-avatar.png" alt="Avatar de usuario" class="user-avatar" />
+        </div>
+      </header>
+
+      <section class="page-content">
+        %PAGE_CONTENT%
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 CEU - MiniLab DAM/DAW</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administración - CRM Alumnado</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar" role="navigation" aria-label="Menú principal">
+      <div class="sidebar-header">
+        <img src="CEU LOGO.png" alt="Logo CEU" class="sidebar-logo" />
+        <h2>CRM Alumnado</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="dashboard.html">Inicio</a></li>
+          <li><a href="alumnos.html">Alumnos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="calificaciones.html">Calificaciones</a></li>
+          <li><a href="admin.html" class="active">Admin</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content" role="main">
+      <header class="content-header">
+        <button class="mobile-menu-btn" aria-label="Mostrar/Ocultar menú">&#9776;</button>
+        <h1>Administración de Usuarios</h1>
+        <div class="user-menu" aria-label="Menú de usuario">
+          <span>Admin</span>
+          <img src="assets/img/user-avatar.png" alt="Avatar de usuario" class="user-avatar" />
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar usuario..." aria-label="Buscar usuario" />
+          <button class="btn btn-add" aria-label="Añadir usuario">+ Nuevo Usuario</button>
+        </div>
+
+        <table class="data-table" aria-describedby="tabla-usuarios">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre de Usuario</th>
+              <th>Rol</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Usuarios dinámicos -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 CEU - MiniLab DAM/DAW</p>
+  </footer>
+
+  <!-- Modal usuario -->
+  <div id="modal-usuario" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title-usuario">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+      <h3 id="modal-title-usuario">Nuevo Usuario</h3>
+      <form>
+        <input type="hidden" name="id" />
+        <div class="form-group">
+          <label for="username">Nombre de Usuario</label>
+          <input class="form-control" type="text" name="username" id="username" required />
+        </div>
+        <div class="form-group">
+          <label for="role">Rol</label>
+          <select class="form-control" name="role" id="role" required>
+            <option value="" disabled selected>Selecciona un rol</option>
+            <option value="admin">Administrador</option>
+            <option value="user">Usuario</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

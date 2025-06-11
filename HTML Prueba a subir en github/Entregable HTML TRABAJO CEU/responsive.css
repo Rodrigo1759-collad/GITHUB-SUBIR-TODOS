@@ -1,0 +1,20 @@
+/* Responsive tweaks */
+
+@media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      z-index: 1000;
+      transform: translateX(-100%);
+      height: 100vh;
+    }
+  
+    .sidebar.active {
+      transform: translateX(0);
+    }
+  
+    .main-content {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
+  
