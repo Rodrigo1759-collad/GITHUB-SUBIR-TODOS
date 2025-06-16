@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noche</title>
+  </head>
+  <body>
+    <canvas id="nocheCanvas" width="800" height="600"></canvas>
+
+    <script>
+      var c = document.getElementById("nocheCanvas");
+      var ctx = c.getContext("2d");
+
+      var cielo = "#0D1B2A";
+      var fondo = "#0D1B2A";
+      var luna = "Yellow";
+      var suelo = "green";
+
+      ctx.fillStyle = cielo;
+      ctx.lineTo(0, 50, 800, 900);
+
+      ctx.fillStyle = fondo;
+      ctx.fillRect(0, 0, 800, 600);
+
+      ctx.fillStyle = luna;
+      ctx.beginPath();
+      ctx.arc(600, 100, 50, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = suelo;
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 5;
+      ctx.fillRect(200, 50, 0, 0);
+    </script>
+  </body>
+</html>
