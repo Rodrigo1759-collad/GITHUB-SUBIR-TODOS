@@ -6,10 +6,22 @@
     <title>Tablas</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        table,
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
         th,
-        td {
-            border: 1px solid gray;
+       td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -53,5 +65,37 @@
             <td>25</td>
         </tr>
     </table>
+    <br><br>
+
+    <table style="width: 100%;">
+    <caption>LISTADO DE TRABAJADORES</caption>
+    <tr>
+        <th colspan="2" style="text-align: center;">Datos Identificados</th>
+        <th colspan="2" style="text-align: center;">Edad</th>
+    </tr>
+    <tr>
+        <th style="padding: 5px;">Nombre</th>
+        <th style="padding: 5px;">Apellido</th>
+        <th style="padding: 5px;">Edad</th>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">Carlos</td>
+        <td style="padding: 5px;">Gómez</td>
+        <td style="padding: 5px;">30</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">Ana</td>
+        <td style="padding: 5px;">López</td>
+        <td style="padding: 5px;">28</td>
+    </tr>
+
+
+
+
+    </table>
+
+
+
+
 </body>
 </html>
