@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuarta página de html - Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h2>FORMULARIO CON DISTINTOS TIPOS DE CAMPOS</h2>
+    <form action="https://www.w3schools.com/action_page.php">
+        <!--CAMPO TIPO TEXTO-->
+        <label for="fname">Nombre</label><br>
+        <input type="text" id="fname" name="idnombre" required><br>
+        <!--CAMPO TIPO CONTRASEÑA-->
+        <label for="password">Contraseña</label><br>
+        <input type="password" id="password" name="idcontraseña" required><br>
+        
+        <!--CAMPO TIPO RADIO-->
+        <input type="radio" id="idhtml" name="lenguaje" value="HTML">
+        <label for="idhtml">HTML</label><br>
+        <input type="radio" id="idcss" name="lenguaje" value="CSS">
+        <label for="idcss">CSS</label><br>
+        <input type="radio" id="idScript" name="lenguaje" value="JavaScript">
+        <label for="idScript">JavaScript</label><br>
+        <br>
+
+        <!--CAMPO TIPO CHECKBOX-->
+        <input type="checkbox" id="idAzul" name="idAzul" value="Azul">
+        <label for="idAzul">Azul</label><br>
+        <input type="checkbox" id="idRojo" name="idRojo" value="Rojo">
+        <label for="idRojo">Rojo</label>
+        <input type="checkbox" id="idVerde" name="idVerde" value="Verde">
+        <label for="idVerde">Verde</label><br>
+        <br>
+
+        <!--Campo tipo button-->
+        <input type="button" value="Botón" onclick="alert('Hola, bienvenido!')"><br>
+        <!--CAMPO TIPO COLOR-->
+        <label for="color">Seleccione su color favorito</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <!--CAMPO TIPO FECHA (DATE)-->
+        <label for="idNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="idNacimiento" name="idNacimiento" min="2025-06-16" max="2025-12-31">
+        <br>
+        <!--CAMPO TIPO FECHA Y HORA (DATETIME LOCAL)-->
+        <label for="idReunion">Fecha y hora en el examen:</label>
+        <input type="datetime-local" id="idReunion" name="idReunion" min="2025-06-16T00:00" max="2025-12-31T23:59">
+        <br>
+        <!--CAMPO TIPO EMAIL-->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="idemail">
+        <br>
+        <!--CAMPO TIPO HIDDEN-->
+        <input type="hidden" id="idCodCliente" name="idCodCliente" value="12345">
+        <br>
+        <!--CAMPO TIPO MONTH-->
+        <label for="idMes">Selecciona mes y año:</label>
+        <input type="month" id="month" name="idMes">
+        <br>
+        <!--CAMPO TIPO NUMBER-->
+        <label for="idNumero">Número:</label>
+        <input type="number" id="idNumero" name="idNumero">
+        <br>
+        <label for="idCantidad2">Introduzca un número entero (1 a 5)</label>
+        <input type="number" id="idCantidad2" name="idcantidad2" min="1" max="5">
+        <br>
+        <!--CAMPO TIPO TEXTO CON LONGITUD MAXIMA-->
+        <label for="idnombreMax">Nombre Máximo 20 caracteres</label><br>
+        <input type="text" id="idNombre" name="idNombreMax" maxlength="20"><br>
+        <br>
+        <!--CAMPO TIPO TEXTO READONLY-->
+        <label for="idFechaIngreso">Fecha de Ingreso</label><br>
+        <input type="text" id="idFechaIngreso" name="idFechaIngreso" readonly><br>
+        <br>
+        <!--CAMPO TIPO TEXTO CON ANCHO DETERMINADO-->
+        <label for="idDireccion">Direccion</label><br>
+        <input type="text" id="idDireccion" name="idDireccion" size="120"><br>
+        <br>
+        <!--CAMPO TIPO NUMÉRICO CON INCREMENTOS DE VALORES-->
+        <label for="idPoder">Poder:</label><br>
+        <input type="number" id="idPoder" name="idPoder" min="0" max="100" step="10" value="50"><br>
+        <br>
+        <!--CAMPO TIPO CON PATTERN-->
+        <label for="idPostal">Código Postal:</label><br>
+        <input type="text" id="idPostal" name="idPostal" pattern="[0-9]{5}"><br>
+        <br>
+        <!--CAMPO TIPO RANGE-->
+        <label for="idVolumen">Selecciona el volumen (entre 0 y 100)</label><br>
+        <input type="range" id="idVolumen" name="idVolumen" min="0" max="100" step="5" onchange="actualizarTexto(this.value);">
+        <input type="text" id="idMuestraRango" value="" readonly size="3">
+        <br>
+        <!--CAMPO TIPO TEL-->
+        <label for="idTelefono">Teléfono:</label><br>
+        <input type="tel" id="idTelefono" name="idTelefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        <!--CAMPO TIPO TIME-->
+        <label for="idHora">Selecciona la hora:</label><br>
+        <input type="time" id="idHora" name="idHora"><br>
+        <!--CAMPO TIPO WEEK-->
+        <label for="idSemana">Selecciona la semana:</label><br>
+        <input type="week" id="idSemana" name="idSemana"><br>
+        <!--CAMPO TIPO IMAGE-->
+        <input type="image" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Submit" width="300" height="100">
+        <br>
+        <!--CAMPO TIPO FILE-->
+        <label for="file">Selecciona un archivo:</label>
+        <input type="file" id="file" name="file">
+        <br>
+        <!--CAMPO TIPO RESET-->
+        <input type="reset" value="Resetear">
+        <!--CAMPO TIPO SUBMIT - ENVÍO DE FORMULARIO-->
+        <input type="submit" value="Enviar" class="form-submit-button"><br>
+        <br>
+    </form>
+
+    <!--FORMULARIO DE BÚSQUEDA EN GOOGLE (fuera del formulario principal)-->
+    <form action="https://www.google.com/search" method="get">
+        <label for="search">Buscar en Google:</label><br>
+        <input type="text" id="search" name="q" autocomplete="off"><br>
+        <input type="submit" value="Buscar">
+    </form>
+
+    <script>
+        function getFecha() {
+            document.getElementById("idFechaIngreso").value = new Date().toJSON().slice(0, 10);       
+        }
+
+        function actualizarTexto(texto) {
+            document.getElementById("idMuestraRango").value=texto;
+        }
+        // Inicializar valores al cargar la página
+        window.onload = function() {
+            getFecha();
+            actualizarTexto("50");
+        }
+    </script>
+</body>
+</html>
