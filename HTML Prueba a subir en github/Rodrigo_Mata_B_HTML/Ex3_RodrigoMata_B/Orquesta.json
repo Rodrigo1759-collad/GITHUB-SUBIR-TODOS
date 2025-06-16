@@ -1,0 +1,37 @@
+{
+  "Informacion general de la orquesta": {
+    "nombreOrquesta": "(String) Orquesta Bormujero",
+    "ciudad": "(String) Bormujos",
+    "fundacion": "(Number) 2004",
+    "tipo": "(String) Orquesta juvenil"
+  },
+  "salas (Array)": [
+    {
+      "nombre": "(String) Salón de actos teatro",
+      "aforo": "(Number) 70 personas"
+    }
+  ],
+  "musicos (Array)": [
+    {
+      "nombre": "(String) Justo Rodriguez",
+      "numeroAtril": "(Number) 3",
+      "instrumento": "(String) flauta",
+      "antiguedad": "(Number) 3 años",
+      "edad": "(Number) 32 años",
+      "principal": "(Boolean) si",
+      "datos (Objeto)": {
+        "temporada": "(String) 2023-2024",
+        "conciertosInterpretados": "(Number) 2",
+        "solosEjecutados": "(Number) 6",
+        "horasEnsayo": "(Number) 12"
+      }
+    }
+  ],
+  "personalTecnico (Array)": [
+    {
+      "nombre": "(String) Antonio Ruiz",
+      "rol": "(String) sonido",
+      "experiencia": "(Number) 12 años"
+    }
+  ]
+}
