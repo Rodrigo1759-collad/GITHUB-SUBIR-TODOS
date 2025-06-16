@@ -1,0 +1,74 @@
+{
+    "Negocio":[
+        {
+            "id":1,
+            "nombre":"Ferretería",
+            "descripcion":"Venta de herramientas y materiales de construcción",
+            "ubicacion":[
+                {
+                    "ciudad": "Sevilla",
+                    "dirección": "Calle Nervión",
+                    "código postal": "41001"
+                },
+                {
+                    "Clientes":[
+                        {
+                            "id": 2,
+                            "nombre": "Juan Ríos",
+                            "telefono": "654321987",
+                            "correo electrónico": ""
+                        },
+                        {
+                            "Envio":[
+                                {
+                                    "id":5,
+                                    "destinatario": "Juan Ríos",
+                                    "direccion": "Calle Nervión, Sevilla",
+                                    "fecha_envio": "2023-10-01",
+                                    "estado": "Pendiente"
+                                }
+                            ],
+                            "Pasarela de pago":[
+                                {
+                                    "id":12,
+                                    "metedo_pago": "Tarjeta de crédito, bizum, criptomonedas, efectivo",
+                                    "estado_pago": "Completado",
+                                    "fecha_pago": "2023-10-01"
+
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "productos":[
+                {
+                    "id":101,
+                    "nombre":"Martillo",
+                    "precio":12.99,
+                    "disponible":true,
+                    "categoria":"Herramientas"
+                },
+                {
+                    "productos 2":[
+                        {
+                            "id":102,
+                            "nombre": "Destornillador",
+                            "precio": 8.99,
+                            "disponibilidad": false,
+                            "categoria": "Herramientas",
+                            "caracteristicas":[
+                                {
+                                    "tipo": "Phillips",
+                                    "tamaño": "Mediano",
+                                    "material": "Acero inoxidable"                                    
+
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
