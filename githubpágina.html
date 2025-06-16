@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link rel="icon" type="image/x-icon" href="github.ico">
+    <link rel="stylesheet" href="cabecera.css"></head>
+<body>
+
+    <h2 id="micabecera">MI CABECERA CON UN IDENTIFICADOR</h2>
+    <h2 id="micabecera">MI CABECERA REPETIDOS</h2>
+
+    <div class="enlaces">
+        <a href="#C1">Sección 1</a><br>
+        <a href="#C2">Sección 2</a><br>
+        <a href="#C3">Sección 3</a><br>
+    </div>
+    <br><br>
+    <div id="#C1" class="capa1">
+        <h1>Sección primera</h1>
+        <p>Esta sección es la primera de nuestra página</p>
+    </div>
+    <div id="#C2" class="capa2">
+        <h1>Sección segunda</h1>
+        <p>Esta sección es la segunda de nuestra página</p>
+    </div>
+    <div id="#C3" class="capa3">
+        <h1>Sección tercera</h1>
+        <p>Esta sección es la tercera de nuestra página</p>
+    </div>
+    <script>
+        function cambiarTexto() {
+            document.getElementById("micabecera").innerHTML = "MI CABECERA CON UN IDENTIFICADOR CAMBIADO";
+        }
+        cambiarTexcto();
+    </script>
+    
+
+
+
+</body>
+</html>
