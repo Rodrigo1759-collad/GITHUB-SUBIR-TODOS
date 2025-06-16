@@ -1,0 +1,9 @@
+input[type="submit"], input[type="reset"] {
+    padding: 10px;
+    background-color: rgb(71, 25, 9);
+    color: white;
+    border-radius: 10px;
+    border: solid 5px rgb(241, 243, 172);
+    font-size: 20px;
+}
+
