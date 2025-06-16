@@ -1,0 +1,49 @@
+{
+    "Nombre de la Compañía":"Air India",
+    "Datos de Contacto":{
+        "telefono":"12345673",
+        "correo electrónico":"",
+        "dirección":"India"
+    },
+    "Aerolinea":[
+        {
+            "Nombre":"Air India",
+            "Código de Aerolínea":"AI",
+            "Número de vuelo": "737",
+            "Año de fabricacion":2020
+        },
+        {
+            "Datos de los pasajeros":[
+                {
+                    "Nombre":"John Doe",
+                    "Edad":30,
+                    "Número de Pasaporte":"A12345678",
+                    "Nacionalidad":"India",
+                    "Fecha de Embarque":"2023-10-01",
+                    "Clase de Vuelo":"Económica"
+                },
+                {
+                    "Nombre":"Jane Smith",
+                    "Edad":28,
+                    "Número de Pasaporte":"B87654321",
+                    "Nacionalidad":"Estados Unidos",
+                    "Fecha de Embarque":"2023-10-02",
+                    "Clase de Vuelo":"Primera Clase"
+                }
+                
+            ],
+            "Datos del destino":[
+                {
+                    "Ciudad de origen":"Nueva Delhi",
+                    "Ciudad de destino":"Londres",
+                    "Aeropuerto de origen":"Aeropuerto Internacional Indira Gandhi",
+                    "Aeropuerto de destino":"Aeropuerto London Heathrow",
+                    "Fecha de Salida":"2023-10-01",
+                    "Hora de Salida":"10:00 AM",
+                    "Fecha de Llegada":"2023-10-02"
+                }
+            ]
+        }
+    ]
+    
+}

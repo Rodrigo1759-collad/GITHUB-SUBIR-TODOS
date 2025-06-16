@@ -1,0 +1,38 @@
+{
+    "Profesor":[
+        {
+            "Nombre":"Antonio Pérez",
+            "Edad":73,
+            "Departamento":"Infomática",
+            "Disponibilidad":true
+        }
+    ],
+    "Una lista asignatura que imparte":[
+        {
+            "Para cada asignatura":[
+                {
+                    "Nombre de la asignatura":"Entornos de desarrollo",
+                    "Código de la asignatura":"ED-101",
+                    "Créditos":6
+                },
+                {
+                    "Sesiones semanales": 3,
+                    "Donde cada sesión contenga":[
+                        {
+                            "Dia de la semana":"Lunes",
+                            "Hora de inicio y hora de fin":"09:00 - 10:30",
+                            "Aula":"Aula 7",
+                            "Modalidad":"Presencial",
+                            "Si se requiere proyector":true,
+                            "Si se requiere pizarra digital":true,
+                            "Si se requuiere papel":false                                               
+                        }
+                    ]
+                }
+
+        ]
+    
+    }
+   
+    ]
+}
