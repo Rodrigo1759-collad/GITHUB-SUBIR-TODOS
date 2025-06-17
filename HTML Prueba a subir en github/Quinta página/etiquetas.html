@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estoy haciendo una prueba para ver si funciona la etiqueta head y responsive">
+    <meta name="keywords" content="HTML, prueba, etiquetas, responsive">
+    <meta name="author" content="Rodrigo">
+    <meta http-equiv="refresh" content="30">
+
+    <!-- <base href="https://www.diariodesevilla.com/" target="_blank"> -->
+    <!-- <base href="etiquetas.html" target="_blank"> -->
+
+    <title>Head y Responsive</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .left {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            background-color: #2196F3;
+        }
+        main {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #f1f1f1;
+        }
+        .right {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            background-color: #04AA6D;
+        }
+        @media screen and (max-width: 800px) {
+            .left, main, .right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <a href="">Abrir el diario de Sevilla</a> <br> -->
+    <!-- <a href="aljarafe">Abrir diario de Sevilla noticias Aljarafe</a> <br> -->
+    <!-- <a href="economia">Abrir diario de Sevilla noticias economia</a> <br> -->
+
+    <a href="Pagina1.html" target="_blank">Mi página 1</a>
+    <hr>
+    <a href="Pagina2.html" target="_blank">Mi página 2</a>
+    <hr>
+
+    <img src="image.jpg" style="max-width: 100%;" alt="Imagen de ejemplo">
+    <h1 style="font-size: 10px;">Hola Mundo</h1>
+    <p style="font-size: 10px;">Hola Amigos</p>
+
+    <h1 style="font-size: 10vw;">Hola Mundo</h1>
+    <p style="font-size: 10vw;">Hola que pasa gente</p>
+
+    <h2>Medias Queries</h2>
+    <p>Escala el ancho del navegador</p>
+    <p>Mira lo que pasa cuando pasa la resolucion de 800px</p>
+    <hr>
+    <div class="left">
+        <p>Parte izquierda</p>
+    </div>
+    <main>
+        <p>Parte central</p>
+    </main>
+    <div class="right">
+        <p>Parte derecha</p>
+    </div>
+
+</body>
+</html>
